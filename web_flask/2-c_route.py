@@ -12,7 +12,7 @@ def index():
 
 
 @app.route('/hbnb', strict_slashes=False)
-def hello():
+def hbnb():
     """displays HBNB"""
     return 'HBNB'
 
@@ -20,7 +20,7 @@ def hello():
 @app.route('/c/<text>', strict_slashes=False)
 def ciscool(text):
     """display “C ” followed by the value of the text variable"""
-    return 'C' + text.replace('_', ' ')
+    return 'C' + text.replace('_', '')
 
 
 if __name__ == '__main__':
